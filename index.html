@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Аналізатор масивів</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<div class="params">
+		Оберіть метод:
+		<select id="method-select" onchange="methodChange()">
+			<option>Вивести спільні числа для масивів А і Б</option>
+			<option>Вивести всі унікальні числа в масиві</option>
+		</select>
+		<button onclick="analyze()">Аналізувати</button>
+	</div>
+
+	<div class="array-box" id="array1">
+		<h1>Масив А</h1>
+		<h4>Введіть елементи масиву</h4>
+		<input type="number" placeholder="Новий елемент" onblur="elementBlur(this, 1)"><br>
+	</div>
+	<div class="array-box" id="array2">
+		<h1>Масив Б</h1>
+		<h4>Введіть елементи масиву</h4>
+		<input type="number" placeholder="Новий елемент" onblur="elementBlur(this, 2)"><br>
+	</div>
+
+	<div class="overlay" id="overlay"></div>
+	<div class="result-box" id="result-box">
+		<h1>Результат</h1>
+		<p id="result-content"><span>1</span><span>4</span><span>2</span></p>
+		<button onclick="closeResult()">Закрити</button>
+	</div>
+</body>
+</html>

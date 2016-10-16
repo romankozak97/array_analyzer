@@ -1,0 +1,100 @@
+* {
+  font-family:'Roboto', sans-serif;
+  outline:none;
+}
+
+body {
+  padding-top:50px;
+}
+
+.params {
+  width:100%;
+  background:#fff;
+  position:fixed;
+  top:0;
+  left:0;
+  padding:10px 20px;
+  border-bottom:1px solid #eee;
+  text-align:center;
+}
+
+.array-box {
+  width:50%;
+  float:left;
+  text-align:center;
+
+}
+
+select {
+  padding:5px;
+  margin:0 10px;
+  border:1px solid rgb(50,150,255);
+}
+
+button {
+  padding:6px 20px;
+  border:none;
+  background:rgb(50,150,255);
+  color:#fff;
+  cursor:pointer;
+}
+
+button:hover {
+  background:rgb(100,200,255);
+}
+
+button:active {
+  background:rgb(0,100,200);
+}
+
+input[type="text"],
+input[type="number"] {
+  padding:5px;
+  margin:5px 0;
+  border:1px solid gray;
+}
+
+h1 {
+  color:rgb(50,150,255);
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border:1px solid rgb(50,150,255);
+}
+
+.overlay {
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,.8);
+  top:0;
+  left:0;
+  z-index:100;
+}
+
+.result-box {
+  position:fixed;
+  top:200px;
+  left:40%;
+  background:#fff;
+  width:20%;
+  padding:20px;
+  z-index:200;
+}
+
+.result-box p {
+  color:gray;
+}
+
+.result-box span {
+  display:inline-block;
+  border:2px solid gray;
+  color:gray;
+  padding:2px;
+  margin:2px 2px;
+  height:22px;
+  width:22px;
+  text-align:center;
+  font-weight:500;
+}
